@@ -1,0 +1,169 @@
+h1 {
+    font-size: 48px;
+    color: rgb(66, 66, 11);
+}
+
+.registrationBackgrAll {
+    background-color: #eeeeee;
+}
+
+.registrBackgr {
+    background-color: rgb(172, 172, 172);
+}
+
+.breadSize {
+    font-size: 15px;
+}
+
+#breadcrumbs-one{
+    margin-top: 10px;
+    background: #eee;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f5f5f5 #e5e5e5 #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    overflow: hidden;
+    width: 100%;
+    }
+    
+#breadcrumbs-one li{
+    float: left;
+    }
+    
+#breadcrumbs-one a{
+    padding: 3px 3px 3px 25px;
+    float: left;
+    text-decoration: none;
+    color: #444;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    background-color: #ddd;
+    background-image: linear-gradient(to right, #f5f5f5, #ddd);
+    }
+    
+   #breadcrumbs-one li:first-child a{
+    padding-left: 1em;
+    border-radius: 5px 0 0 5px;
+    }
+    
+   #breadcrumbs-one a:hover{
+    background: #fff;
+    }
+    
+   #breadcrumbs-one a::after,
+    #breadcrumbs-one a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid;
+    right: -1em;
+    }
+    
+   #breadcrumbs-one a::after{
+    z-index: 2;
+    border-left-color: #ddd;
+    }
+    
+   #breadcrumbs-one a::before{
+    border-left-color: #ccc;
+    right: -1.1em;
+    z-index: 1;
+    }
+    
+   #breadcrumbs-one a:hover::after{
+    border-left-color: #fff;
+    }
+    
+   #breadcrumbs-one .current,
+    #breadcrumbs-one .current:hover{
+    font-weight: bold;
+    background: none;
+    }
+    
+   #breadcrumbs-one .current::after,
+    #breadcrumbs-one .current::before{
+    content: normal;
+    }
+
+/*ФОРМА*/
+
+.row {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 15px;
+}
+
+span {
+    color: red;
+}
+
+.form-check-input {
+    margin-top: 1.3rem;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.form-check-label {
+    margin-left: 20px;
+}
+
+.btnModal1 {
+    width: 200px;
+    height: 40px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    background-color: #3a3f44;
+    color: white;
+    border: solid 1px #3a3f44;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+.btnModal1:hover {
+    background-color: #3a3f44;
+    border-color: #3a3f44;
+    color: white;
+    box-shadow: 0 0 12px #3a3f44;
+    box-shadow: 0 0 12px #3a3f44;
+    box-shadow: 0 0 12px #3a3f44;
+    box-shadow: 0 0 12px #3a3f44;
+    box-shadow: 0 0 12px #3a3f44;
+}
+
+/*Модальное окно лицензионного соглашения*/
+
+.licenseLink {
+    color: royalblue;
+}
+
+.scrollLicenseModal {
+    overflow: hidden;
+}
+
+.modalBackgr {
+    background-color: hsl(0, 0%, 95%);
+}
+
+/*КАРУСЕЛЬ_АКЦИЯ_ПРИ_РЕГИСТРАЦИИ*/
+
+.carousel {
+    width: 500px;
+    height: 190px;
+}
+
+.carousel-caption {
+    bottom: 0px;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 17px;
+}

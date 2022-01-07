@@ -1,0 +1,442 @@
+@media all and (max-width: 1270px) {
+    .conteiner {
+        width: 1150px;
+    }
+
+    .conteinerIns {
+        width: 1100px;
+    }
+
+    .navigation {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    .navigationMenu {
+        border-bottom: none;
+    }
+
+    .wrap {
+        justify-content: center;
+    }
+
+    .pop3 {
+        width: 390px;
+    }
+
+    .pop2 {
+        width: 460px;
+    }
+
+    .pop4 {
+        width: 350px;
+    }
+
+    .pop5 {
+        width: 260px;
+    }
+
+    .pop9 {
+        width: 290px;
+    }
+
+    .sendFormControl {
+        margin-left: 230px;
+    }
+}
+
+@media all and (max-width: 1170px) {
+    .conteiner {
+        width: 900px;
+    }
+
+    .conteinerIns {
+        width: 850px;
+    }
+
+    .pop1 {
+        width: 120px;
+    }
+
+    .pop2 {
+        width: 265px;
+    }
+
+    .pop3 {
+        width: 303px;
+    }
+
+    .pop4 {
+        width: 235px;
+    }
+
+    .pop5 {
+        width: 184px;
+    }
+
+    .pop6 {
+        width: 267px;
+    }
+
+    .pop7 {
+        width: 148px;
+    }
+
+    .pop8 {
+        width: 177px;
+    }
+
+    .pop9 {
+        width: 230px;
+    }
+
+    .pop10 {
+        width: 124px;
+    }
+
+    footer div:nth-child(1) {
+        width: 330px;
+    }
+
+    footer div:nth-child(4) {
+        width: 300px;
+    }
+
+    .sendFormControl {
+        margin-left: 100px;
+    }
+}
+
+@media all and (max-width: 920px) {
+    
+    .conteiner {
+        width: 600px;
+    }
+
+    .conteinerIns {
+        width: 550px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main {
+        margin-bottom: 80px;
+    }
+
+/*     .animationBlock {
+        font-size: 20px;
+        margin-top: 50px;
+        height: 40px;
+    }
+
+    .animationRight {
+        font-size: 20px;
+    }
+
+    @keyframes reveal {
+        0% {
+            opacity: 0;
+            width: 0px;
+        }
+        20% {
+            opacity: 1;
+            width: 0px;
+        }
+        30% {
+            width: 165px;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            width: 165px;
+        }
+    }
+
+    h1 {
+        font-size: 46px;
+        margin-top: 0px;
+    }
+
+    .headButton {
+        font-family: 'Open Sans', sans-serif;
+        width: 170px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .pageDown {
+        margin-top: 0px;
+    } */
+
+    .pop1 {
+        width: 160px;
+    }
+
+    .pop2 {
+        width: 365px;
+    }
+
+    .pop3 {
+        width: 295px;
+    }
+
+    .pop4 {
+        width: 235px;
+    }
+
+    .pop5 {
+        width: 223px;
+    }
+
+    .pop6 {
+        width: 307px;
+    }
+
+    .pop7 {
+        width: 233px;
+    }
+
+    .pop8 {
+        width: 297px;
+    }
+
+    .pop9 {
+        width: 326px;
+    }
+
+    .pop10 {
+        width: 204px;
+    }
+
+    .sendHeading {
+        margin-left: 45px;
+    }
+
+    .sendFormControl {
+        margin-left: -40px;
+    }
+
+    .logoFooter {
+        width: 75px;
+    }
+
+    svg {
+        margin: 5px;
+    }
+
+    .footerAdapt {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 690px) {
+    
+    .conteiner {
+        width: 320px;
+    }
+
+    .conteinerIns {
+        width: 300px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main {
+        margin-bottom: 40px;
+    }
+
+    .pop1 {
+        width: 160px;
+    }
+
+    .pop2 {
+        width: 365px;
+    }
+
+    .pop3 {
+        width: 295px;
+    }
+
+    .pop4 {
+        width: 235px;
+    }
+
+    .pop5 {
+        width: 223px;
+    }
+
+    .pop6 {
+        width: 307px;
+    }
+
+    .pop7 {
+        width: 233px;
+    }
+
+    .pop8 {
+        width: 297px;
+    }
+
+    .pop9 {
+        width: 326px;
+    }
+
+    .pop10 {
+        width: 204px;
+    }
+
+    .sendHeading {
+        margin-left: 45px;
+    }
+
+    .sendFormControl {
+        margin-left: -40px;
+    }
+
+    .logoFooter {
+        width: 75px;
+    }
+
+    svg {
+        margin: 5px;
+    }
+
+    nav div {
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .imgHeader {
+        width: 50px;
+    }
+
+    .navH3:hover:after {
+        width: 0%;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 55px;
+    }
+
+    .lineNav {
+        width: 110px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin-top: 20px;
+    }
+
+    .headR {
+        width: 210px;
+        justify-content: end;
+    }
+
+    .headButton {
+        font-family: 'Open Sans', sans-serif;
+        width: 170px;
+        height: 40px;
+        font-size: 12px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .mainScreen {
+        display: none;
+    }
+
+    .phoneAdapt {
+        display: block;
+    }
+
+    .akciiMain {
+        display: none;
+    }
+
+    .navigationMenu {
+        height: auto;
+        margin-bottom: -30px;
+    }
+
+    .pop1 {
+        width: 280px;
+    }
+
+    .pop2 {
+        width: 280px;
+    }
+
+    .pop3 {
+        width: 280px;
+    }
+
+    .pop4 {
+        width: 280px;
+    }
+
+    .pop5 {
+        width: 280px;
+    }
+
+    .pop6 {
+        width: 280px;
+    }
+
+    .pop7 {
+        width: 280px;
+    }
+
+    .pop8 {
+        width: 280px;
+    }
+
+    .pop9 {
+        width: 280px;
+    }
+
+    .pop10 {
+        width: 280px;
+    }
+
+    .sendFormControl {
+        width: 290px;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 10px;
+        border-radius: 25px;
+        margin-top: 10px;
+    }
+
+    .footerAdapt {
+        display: none;
+    }
+
+    .sendHeading {
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 25px;
+    }
+
+    .sendBtnRegistr {
+        height: 40px;
+        margin-left: -80px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    .btnRegistr {
+        width: 80px;
+    }
+}
+

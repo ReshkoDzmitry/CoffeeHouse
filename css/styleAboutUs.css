@@ -1,0 +1,51 @@
+.JcC {
+    justify-content: center;
+}
+
+.aboutUsBottoms {
+    margin-bottom: 30px;
+}
+
+.textStart {
+    text-align: start;
+}
+
+.textJu {
+    text-align: justify;
+}
+
+.aboutUs1 {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    border-radius: 15px;
+}
+
+.aboutUs2 {
+    margin: 0px 10px 10px 0px;
+    border-radius: 15px;
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.galery {
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.aboutUsColumMar {
+    margin: 0px 40px;
+}
+
+.aboutUsColum {
+    align-items: flex-start;
+}
+
+.font1 {
+    font-family: 'Marck Script', cursive;
+    font-size: 25px;
+    color: #5a441c;
+}
+

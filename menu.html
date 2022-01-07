@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleRegistration.css">
+    <link rel="stylesheet" href="css/styleContacts.css">
+    <link rel="stylesheet" href="css/styleMenu.css">
+    <link rel="shortcut icon" href="img/icon/icon.ico" type="image/png">
+    <title>Меню</title>
+</head>
+<body>
+
+    <div class="registrationBackgrAll">
+        <div>
+            <header class="registrBackgr"> <!--главный header c background-->
+              <div class="lineNav ">
+                <nav class="conteiner flex stroke"> <!--навигация и logo-->
+                  <div><a href="index.html"><h3 class="navH3">Главная</h3></a></div>
+                  <div><a href="menu.html"><h3 class="navH3">Меню</h3></a></div>
+                  <div><a href="promoties.html"><h3 class="navH3">Акции</h3></a></div>
+                  <div class="logo"></div>
+                  <div><a href="aboutUs.html"><h3 class="navH3">О нас</h3></a></div>
+                  <div><a href="contacts.html"><h3 class="navH3">Контакты</h3></a></div>
+                  <div><a href="#exampleModal" class="btn btn-primary" data-toggle="modal"><h3 class="navH3">Войти</h3></a></div>
+                </nav>
+              </div>
+            </header>
+        </div>
+
+        <!--Модальное окно ВХОД-->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modalBackgr">
+            <div class="modal-header">
+              <div><h5 class="modal-title colortitle" id="exampleModalLabel">Авторизация</h5></div>
+            </div>
+            <div class="modal-body">
+              
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Введите адрес вашей электронной почты</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">Мы никогда никому не передадим вашу электронную почту.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                </div>
+                <div class="centerAll">
+                  <button class="btnModal">Войти</button>
+                </div>
+                <div class="centerAll">
+                  <small id="emailHelp" class="form-text text-muted">Регистрация через соц.сети</small>                  
+                  <button class="btnSocial">vk</button>
+                  <button class="btnSocial">f</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="registration.html"><button class="btnRegistr">Регистрация</button></a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="conteinerIns">
+            <ul id="breadcrumbs-one" class="breadCr"><!--хлебные крошки-->
+                <li><a href="index.html" class="breadSize">Главная</a></li>
+                <li><a href="#" class="current breadSize">Меню</a></li>
+            </ul>    
+        </div>
+
+        <div class="conteinerIns centerAll">
+            <h1>МЕНЮ</h1>
+        </div> <br>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-coffee-list" data-toggle="list" href="#list-coffee" role="tab" aria-controls="coffee">Кофе</a>
+              <a class="list-group-item list-group-item-action" id="list-tea-list" data-toggle="list" href="#list-tea" role="tab" aria-controls="tea">Чай</a>
+              <a class="list-group-item list-group-item-action" id="list-cocktails-list" data-toggle="list" href="#list-cocktails" role="tab" aria-controls="cocktails">Коктейли</a>
+              <a class="list-group-item list-group-item-action" id="list-sets-list" data-toggle="list" href="#list-sets" role="tab" aria-controls="sets">Сеты</a>
+              <a class="list-group-item list-group-item-action" id="list-desserts-list" data-toggle="list" href="#list-desserts" role="tab" aria-controls="desserts">Десерты</a>
+              <a class="list-group-item list-group-item-action" id="list-сoffeeWeight-list" data-toggle="list" href="#list-сoffeeWeight" role="tab" aria-controls="сoffeeWeight">Кофе на развес</a>
+              <a class="list-group-item list-group-item-action" id="list-teaWeight-list" data-toggle="list" href="#list-teaWeight" role="tab" aria-controls="teaWeight">Чай на развес</a>
+
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-coffee" role="tabpanel" aria-labelledby="list-coffee-list">
+                <div class="flex JCsb wrap">
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/1.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>ЛАТТЕ «ФИСТАШКОВЫЙ»</h5></div>
+                    <div class="contentMenu"><p>Кофейный напиток с ярким вкусом фисташек. Посыпается дроблеными орехами.</p></div>
+                    <div class="flex">
+                        <div><select class="form-control" id="exampleFormControlSelect1">
+                          <option>270 мл - 4 руб. 20 коп.</option>
+                          <option>390 мл - 5 руб. 60 коп</option>
+                        </select></div>
+                        <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/2.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>ЭСПРЕССО</h5></div>
+                    <div  class="contentMenu"><p>Классический способ приготовления кофе. Подается со стаканом холодной воды. Любой кофейный напиток мы можем приготовить без кофеина</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect2">
+                        <option>30 мл - 4 руб. 20 коп.</option>
+                        <option>60 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/3.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>АМЕРИКАНО</h5></div>
+                    <div class="contentMenu"><p>Кофе на основе эспрессо с богатым вкусом и ароматом. Любой кофейный напиток мы можем приготовить без кофеина</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect3">
+                        <option>150 мл - 4 руб. 20 коп.</option>
+                        <option>300 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/4.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>ЛАТТЕ КЛАССИЧЕСКИЙ</h5></div>
+                    <div class="contentMenu"><p>Любой кофейный напиток мы можем приготовить без кофеина и на обезжиренном молоке.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect4">
+                        <option>270 мл - 4 руб. 20 коп.</option>
+                        <option>290 мл - 5 руб.</option>
+                        <option>390 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/5.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>КАПУЧИНО</h5></div>
+                    <div class="contentMenu"><p>Любой кофейный напиток мы можем приготовить без кофеина и на обезжиренном молоке.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect5">
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/6.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>РАФ КОКОСОВЫЙ</h5></div>
+                    <div class="contentMenu"><p>Сливочный кофе с нежным вкусом кокосового мусса.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect6">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/7.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>КОФЕ ФИЛЬТР-КОФЕ</h5></div>
+                    <div class="contentMenu"><p>Заваривается классическим DRIP методом. Данные способы заваривания вам смогут предложить только в кофейнях со специальным оборудованием.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect7">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/8.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>ФЛЭТ УАЙТ</h5></div>
+                    <div class="contentMenu"><p>Кофейно-молочный напиток, придуманный в Австралии, с ярко выраженным вкусом кофе.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect8">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/9.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>РАФ КОФЕ</h5></div>
+                    <div class="contentMenu"><p>Кофейный напиток со сливками и ванильным сахаром.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect9">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/10.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>ЛАТТЕ "ГРИЛЬЯЖ"</h5></div>
+                    <div class="contentMenu"><p>Кофейный напиток с горячим шоколадом, подается под шапкой из взбиых сливок, с ореховым сиропом, миндалем в карамели и имбирным пряником.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect10">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/сoffee/11.jpg" alt="coffee" class="cardImg" /></div>
+                    <div><h5>РАФ ЦИТРУСОВЫЙ"</h5></div>
+                    <div class="contentMenu"><p>Кофейно-сливочный напиток с яркими цитрусовыми нотами и приятным карамельным послевкусием.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect11">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"></button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>           
+              
+              <div class="tab-pane fade" id="list-tea" role="tabpanel" aria-labelledby="list-tea-list">
+                <div class="flex JCsb wrap">
+                  <div class="cardMenu">
+                    <div><img src="img/menu/tea/1.jpg" alt="tea" class="cardImg" /></div>
+                    <div><h5>ОБЛЕПИХОВЫЙ</h5></div>
+                    <div class="contentMenu"><p>По рецепту «Шоколадницы»: облепиха, мед и лимонный сок.</p></div>
+                    <div class="flex">
+                        <div><select class="form-control" id="exampleFormControlSelect1">
+                          <option>270 мл - 4 руб. 20 коп.</option>
+                          <option>390 мл - 5 руб. 60 коп</option>
+                        </select></div>
+                        <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/tea/2.jpg" alt="tea" class="cardImg" /></div>
+                    <div><h5>ЧЕРНЫЙ ЧАЙ</h5></div>
+                    <div  class="contentMenu"><p>Ассам, Эрл Грей.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect2">
+                        <option>30 мл - 4 руб. 20 коп.</option>
+                        <option>60 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/tea/3.jpg" alt="tea" class="cardImg" /></div>
+                    <div><h5>ЗЕЛЕНЫЙ ЧАЙ</h5></div>
+                    <div class="contentMenu"><p>Классическая Сенча, китайский жасмин, молочный улун.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect3">
+                        <option>150 мл - 4 руб. 20 коп.</option>
+                        <option>300 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/tea/4.jpg" alt="tea" class="cardImg" /></div>
+                    <div><h5>ГЛИНТВЕЙН Б/А</h5></div>
+                    <div class="contentMenu"><p>Безалкогольная версия пряного и согревающего глинтвейна, с нотами гибискуса, специй и цитрусовых.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect4">
+                        <option>270 мл - 4 руб. 20 коп.</option>
+                        <option>290 мл - 5 руб.</option>
+                        <option>390 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/tea/5.jpg" alt="tea" class="cardImg" /></div>
+                    <div><h5>ИМБИРНЫЙ С ЛИМОНОМ</h5></div>
+                    <div class="contentMenu"><p>Классический рецепт зимнего согревающего чая, с терпким послевкусием и приятной цитрусовой кислотностью.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect5">
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/tea/6.jpg" alt="tea" class="cardImg" /></div>
+                    <div><h5>ЧАЙ «МАРОККАНСКИЙ»</h5></div>
+                    <div class="contentMenu"><p>Апельсин, лайм, корица, тростниковый сахар и мята.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect6">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/tea/7.jpg" alt="tea" class="cardImg" /></div>
+                    <div><h5>ЧЕРНАЯ СМОРОДИНА С МЯТОЙ</h5></div>
+                    <div class="contentMenu"><p>Яркий чай с приятной ягодной кислотностью и освежающим послевкусием мяты, прекрасно подойдет для холодного зимнего вечера в уютной компании.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect7">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-pane fade" id="list-cocktails" role="tabpanel" aria-labelledby="list-cocktails-list">
+                <div class="flex JCsb wrap">
+                  <div class="cardMenu">
+                    <div><img src="img/menu/cocktails/1.jpg" alt="cocktail" class="cardImg" /></div>
+                    <div><h5>ЛИМОНАД МАРАКУЙЯ-ИМБИРЬ</h5></div>
+                    <div class="contentMenu"><p>Сбалансированный легкий лимонад на основе тропической маракуйи и сочного апельсина, с продолжительным послевкусием имбиря и ароматом тимьяна.</p></div>
+                    <div class="flex">
+                        <div><select class="form-control" id="exampleFormControlSelect1">
+                          <option>270 мл - 4 руб. 20 коп.</option>
+                          <option>390 мл - 5 руб. 60 коп</option>
+                        </select></div>
+                        <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/cocktails/2.jpg" alt="cocktail" class="cardImg" /></div>
+                    <div><h5>СМУЗИ КЛУБНИКА&МАЛИНА</h5></div>
+                    <div  class="contentMenu"><p>Ягодный смузи с клубникой и малиной, с мятными нотками. Sugar free.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect2">
+                        <option>30 мл - 4 руб. 20 коп.</option>
+                        <option>60 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/cocktails/3.jpg" alt="cocktail" class="cardImg" /></div>
+                    <div><h5>ЛИМОНАД КЛУБНИКА&МЯТА</h5></div>
+                    <div class="contentMenu"><p>Яркий лимонад из клубники, лайма с ароматом мяты.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect3">
+                        <option>150 мл - 4 руб. 20 коп.</option>
+                        <option>300 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/cocktails/4.jpg" alt="cocktail" class="cardImg" /></div>
+                    <div><h5>ОБЛЕПИХОВЫЙ ЛИМОНАД</h5></div>
+                    <div class="contentMenu"><p>Освежающий лимонад из сочной облепихи с нотками лайма.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect3">
+                        <option>150 мл - 4 руб. 20 коп.</option>
+                        <option>300 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/cocktails/5.jpg" alt="cocktail" class="cardImg" /></div>
+                    <div><h5>АЙС-ЛАТТЕ КЛАССИЧЕСКИЙ</h5></div>
+                    <div class="contentMenu"><p>Классический нежный латте в холодном исполнении.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect5">
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/cocktails/7.jpg" alt="cocktail" class="cardImg" /></div>
+                    <div><h5>ДОМАШНИЙ ЛИМОНАД</h5></div>
+                    <div class="contentMenu"><p>Классический домашний газированный лимонад со вкусом лимона.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect7">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/cocktails/8.jpg" alt="cocktail" class="cardImg" /></div>
+                    <div><h5>СВЕЖЕВЫЖАТЫЕ СОКИ В АССОРТИМЕНТЕ</h5></div>
+                    <div class="contentMenu"><p>На выбор: апельсин, грейпфрут, яблоко, морковь.</p></div>
+                    <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect7">
+                        <option>290 мл - 5 руб. 20 коп.</option>
+                        <option>200 мл - 4 руб. 20 коп.</option>
+                        <option>360 мл - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="list-sets" role="tabpanel" aria-labelledby="list-sets-list">
+                <div class="flex JCsb wrap">
+                  <div class="cardMenu">
+                    <div><img src="img/menu/sets/1.jpg" alt="set" class="cardImg" /></div>
+                    <div><h5>ЛЕГКИЙ СЕТ</h5></div>
+                    <div class="contentMenu"><p>Овсяная, пшённая или рисовая каша с классическим круассаном и напитком на выбор: американо, эспрессо, классический капучино, классический латте или чай.</p></div>
+                    <div class="flex">
+                        <div><select class="form-control" id="exampleFormControlSelect1">
+                          <option>300 гр - 4 руб. 20 коп.</option>
+                          <option>420 гр - 5 руб. 60 коп</option>
+                        </select></div>
+                        <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/sets/2.jpg" alt="sets" class="cardImg" /></div>
+                    <div><h5>ПОЛЕЗНЫЙ СЕТ</h5></div>
+                    <div class="contentMenu"><p>Фермерский творог + Круассан классический + Напиток.</p></div>
+                    <div class="flex">
+                        <div><select class="form-control" id="exampleFormControlSelect1">
+                          <option>300 гр - 4 руб. 20 коп.</option>
+                          <option>420 гр - 5 руб. 60 коп</option>
+                        </select></div>
+                        <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/sets/3.jpg" alt="sets" class="cardImg" /></div>
+                    <div><h5>ТРАДИЦИОННЫЙ СЕТ</h5></div>
+                    <div class="contentMenu"><p>Омлет с сыром, томатами и беконом или фирменные сырники с малиновым вареньем с классическим круассаном и напитком на выбор.</p></div>
+                    <div class="flex">
+                        <div><select class="form-control" id="exampleFormControlSelect1">
+                          <option>300 гр - 4 руб. 20 коп.</option>
+                          <option>420 гр - 5 руб. 60 коп</option>
+                        </select></div>
+                        <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+                  <div class="cardMenu">
+                    <div><img src="img/menu/sets/4.jpg" alt="sets" class="cardImg" /></div>
+                    <div><h5>СЫТНЫЙ СЕТ</h5></div>
+                    <div class="contentMenu"><p>Куриная колбаска с хашбрауном или бифштекс я яйцом пашот с классическим круассаном и напитком на выбор.</p></div>
+                    <div class="flex">
+                        <div><select class="form-control" id="exampleFormControlSelect1">
+                          <option>300 гр - 4 руб. 20 коп.</option>
+                          <option>420 гр - 5 руб. 60 коп</option>
+                        </select></div>
+                        <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="list-desserts" role="tabpanel" aria-labelledby="list-desserts-list">
+              <div class="flex JCsb wrap">
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/1.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>ЧИЗКЕЙК «ДВА ШОКОЛАДА»</h5></div>
+                  <div class="contentMenu"><p>Чизкейк холодного приготовления с молочным и белым шоколадом, на темном бисквите.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/2.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>НАПОЛЕОН</h5></div>
+                  <div class="contentMenu"><p>Традиционный десерт, приготовленный по нашему фирменному рецепту: подрумяненное слоёное тесто и заварной крем с натуральной ванилью.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/3.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>ТОРТ «OPERA»</h5></div>
+                  <div class="contentMenu"><p>Прослойка из белого и шоколадного бисквита, шоколадный крем и темный ганаш.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/4.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>МЕДОВИК</h5></div>
+                  <div class="contentMenu"><p>Тонкие слои медового бисквита чередуются со сметанным кремом. Посыпан вафельной крошкой.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/5.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>ТИРАМИСУ</h5></div>
+                  <div class="contentMenu"><p>Классический итальянский десерт.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/6.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>МАФФИН</h5></div>
+                  <div class="contentMenu"><p>в ассортименте.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/7.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>МОРОЖЕНОЕ В АССОРТИМЕНТЕ</h5></div>
+                  <div class="contentMenu"><p>Ванильное, пломбир, шоколадное, клубничное, с кленовым сиропом и грецким орехом.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/8.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>ШОКОЛАДНЫЙ ФОНДАН</h5></div>
+                  <div class="contentMenu"><p>Подается с шариком мороженого, клубничным соусом, свежей клубникой и мятой.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/9.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>КЛАССИЧЕСКИЙ КРУАССАН</h5></div>
+                  <div class="contentMenu"><p>Круассан классический.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                  </div>
+                </div>
+
+                <div class="cardMenu">
+                  <div><img src="img/menu/desserts/10.jpg" alt="desserts" class="cardImg" /></div>
+                  <div><h5>КРУАССАН С МИНДАЛЕМ</h5></div>
+                  <div class="contentMenu"><p>Классический круассан с миндальной начинкой.</p></div>
+                  <div class="flex">
+                      <div><select class="form-control" id="exampleFormControlSelect1">
+                        <option>300 гр - 4 руб. 20 коп.</option>
+                        <option>420 гр - 5 руб. 60 коп</option>
+                      </select></div>
+                      <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart"cart></button></a></div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="list-сoffeeWeight" role="tabpanel" aria-labelledby="list-сoffeeWeight-list">
+            <div class="flex JCsb wrap">
+              <div class="cardMenu">
+                <div><img src="img/menu/сoffeeWeight/bs.jpeg" alt="сoffeeWeight" class="cardImg" /></div>
+                <div><h5>БРАЗИЛИЯ САНТОС</h5></div>
+                <div class="contentMenu"><p>Имеет кофейно-ореховый аромат и вкус с оттенками миндаля и какао.</p></div>
+                <div class="flex">
+                    <div><select class="form-control" id="exampleFormControlSelect1">
+                      <option>100 гр - 4 руб. 20 коп.</option>
+                      <option>150 гр - 5 руб. 60 коп</option>
+                    </select></div>
+                    <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                </div>
+              </div>
+
+              <div class="cardMenu">
+                <div><img src="img/menu/сoffeeWeight/col.jpeg" alt="сoffeeWeight" class="cardImg" /></div>
+                <div><h5>КОЛУМБИЯ СУПРЕМО</h5></div>
+                <div class="contentMenu"><p>Кофе средней крепости, богатый вкус с винным оттенком, хорош как в моно, так и в купаже, один из лучших кофе в мире.</p></div>
+                <div class="flex">
+                    <div><select class="form-control" id="exampleFormControlSelect1">
+                      <option>300 гр - 4 руб. 20 коп.</option>
+                      <option>420 гр - 5 руб. 60 коп</option>
+                    </select></div>
+                    <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                </div>
+              </div>
+
+              <div class="cardMenu">
+                <div><img src="img/menu/сoffeeWeight/de.jpeg" alt="сoffeeWeight" class="cardImg" /></div>
+                <div><h5>НЕМЕЦКИЙ КУПАЖ</h5></div>
+                <div class="contentMenu"><p>Сбалансированные сорта Арабики, стран Латинской Америки и Азии, и Робусты, средней крепости.</p></div>
+                <div class="flex">
+                    <div><select class="form-control" id="exampleFormControlSelect1">
+                      <option>300 гр - 4 руб. 20 коп.</option>
+                      <option>420 гр - 5 руб. 60 коп</option>
+                    </select></div>
+                    <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                </div>
+              </div>
+
+              <div class="cardMenu">
+                <div><img src="img/menu/сoffeeWeight/it.jpeg" alt="сoffeeWeight" class="cardImg" /></div>
+                <div><h5>ИТАЛЬЯНСКИЙ КУПАЖ</h5></div>
+                <div class="contentMenu"><p>Плотный насыщенный кофе с легкими нотками темного шоколада, карамели и ореха.</p></div>
+                <div class="flex">
+                    <div><select class="form-control" id="exampleFormControlSelect1">
+                      <option>300 гр - 4 руб. 20 коп.</option>
+                      <option>420 гр - 5 руб. 60 коп</option>
+                    </select></div>
+                    <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                </div>
+              </div>
+
+              <div class="cardMenu">
+                <div><img src="img/menu/сoffeeWeight/wie.png" alt="сoffeeWeight" class="cardImg" /></div>
+                <div><h5>ВЬЕТНАМ</h5></div>
+                <div class="contentMenu"><p>Робуста из Вьетнама выгодно отличается от прочей азиатской и африканской робусты тем, что она более качественная и мягкая по вкусу.</p></div>
+                <div class="flex">
+                    <div><select class="form-control" id="exampleFormControlSelect1">
+                      <option>300 гр - 4 руб. 20 коп.</option>
+                      <option>420 гр - 5 руб. 60 коп</option>
+                    </select></div>
+                    <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="cart" class="shopingCart" /></button></a></div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="list-teaWeight" role="tabpanel" aria-labelledby="list-teaWeight-list">
+          <div class="flex JCsb wrap">
+            <div class="cardMenu">
+              <div><img src="img/menu/teaWeight/1.jpeg" alt="teaWeight" class="cardImg"></div>
+              <div><h5>АCCAM GFOP</h5></div>
+              <div class="contentMenu"><p>Индийский черный байховый чай Ассам класса Golden Flowery Orange Pekoe (GFOP) – это чай высокого качества с большим содержанием типсов (чайных почек).</p></div>
+              <div class="flex">
+                  <div><select class="form-control" id="exampleFormControlSelect1">
+                    <option>100 гр - 4 руб. 20 коп.</option>
+                    <option>150 гр - 5 руб. 60 коп</option>
+                  </select></div>
+                  <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="teaWeight" class="shopingCart" /></button></a></div>
+              </div>
+            </div>
+
+            <div class="cardMenu">
+              <div><img src="img/menu/teaWeight/2.jpeg" alt="teaWeight" class="cardImg"></div>
+              <div><h5>ФРУКТОВЫЙ САД</h5></div>
+              <div class="contentMenu"><p>В состав напитка "Фруктовый Сад" входят каркаде, изюм, плоды шиповника, цельные ягоды ежевики, кусочки ягод клубники и ароматические масла.</p></div>
+              <div class="flex">
+                  <div><select class="form-control" id="exampleFormControlSelect1">
+                    <option>300 гр - 4 руб. 20 коп.</option>
+                    <option>420 гр - 5 руб. 60 коп</option>
+                  </select></div>
+                  <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="teaWeight" class="shopingCart" /></button></a></div>
+              </div>
+            </div>
+
+            <div class="cardMenu">
+              <div><img src="img/menu/teaWeight/3.jpeg" alt="teaWeight" class="cardImg"></div>
+              <div><h5>ЗЕМЛЯНИЧНЫЙ УЛУН</h5></div>
+              <div class="contentMenu"><p>В состав этого чая входят светлый улун, кусочки спелой клубники и ароматические масла.</p></div>
+              <div class="flex">
+                  <div><select class="form-control" id="exampleFormControlSelect1">
+                    <option>300 гр - 4 руб. 20 коп.</option>
+                    <option>420 гр - 5 руб. 60 коп</option>
+                  </select></div>
+                  <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="teaWeight" class="shopingCart" /></button></a></div>
+              </div>
+            </div>
+
+            <div class="cardMenu">
+              <div><img src="img/menu/teaWeight/4.jpeg" alt="teaWeight" class="cardImg"></div>
+              <div><h5>ПУЭР МОЛОЧНЫЙ</h5></div>
+              <div class="contentMenu"><p>Классический рассыпной пятилетний Шу пуэр с молочным ароматом.</p></div>
+              <div class="flex">
+                  <div><select class="form-control" id="exampleFormControlSelect1">
+                    <option>300 гр - 4 руб. 20 коп.</option>
+                    <option>420 гр - 5 руб. 60 коп</option>
+                  </select></div>
+                  <div><a href="#"><button class="btnModal1"><img src="img/logo/shopping-cart.png" alt="teaWeight" class="shopingCart" /></button></a></div>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+      </div>
+
+      <div class="footerBg">
+        <footer class="conteiner flex">
+          <div>
+            <img src="img/header/logoMain100_75.png" alt="logo" class="logoFooter" />
+            <div>
+              <a href="https://www.facebook.com/" target="_blanc">
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="#ffffff00";  xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="31" cy="31" r="30" stroke="white" stroke-opacity="0.2"/>
+                    <path d="M28.8516 41.9839V33.0386H25.8438V29.4839H28.8516V26.6714C28.8516 25.187 29.2682 24.0412 30.1016 23.2339C30.9349 22.4006 32.0417 21.9839 33.4219 21.9839C34.5417 21.9839 35.4531 22.036 36.1562 22.1401V25.3042H34.2812C33.5781 25.3042 33.0964 25.4604 32.8359 25.7729C32.6276 26.0334 32.5234 26.45 32.5234 27.0229V29.4839H35.8438L35.375 33.0386H32.5234V41.9839H28.8516Z" fill="white"/>
+                </svg>
+              </a>
+    
+              <a href="https://twitter.com/home" target="_blanc">
+                <svg width="62" height="62" viewBox="0 0 62 62" fill="#ffffff00" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="31" cy="31" r="30" stroke="white" stroke-opacity="0.2"/>
+                  <path d="M31 27.4917C30.1927 27.4917 29.4375 27.7 28.7344 28.1167C28.0573 28.5073 27.5104 29.0542 27.0938 29.7573C26.7031 30.4344 26.5078 31.1766 26.5078 31.9839C26.5078 32.7912 26.7031 33.5464 27.0938 34.2495C27.5104 34.9266 28.0573 35.4735 28.7344 35.8901C29.4375 36.2808 30.1927 36.4761 31 36.4761C31.8073 36.4761 32.5495 36.2808 33.2266 35.8901C33.9297 35.4735 34.4766 34.9266 34.8672 34.2495C35.2839 33.5464 35.4922 32.7912 35.4922 31.9839C35.4922 31.1766 35.2839 30.4344 34.8672 29.7573C34.4766 29.0542 33.9297 28.5073 33.2266 28.1167C32.5495 27.7 31.8073 27.4917 31 27.4917ZM31 34.9136C30.1927 34.9136 29.5026 34.6271 28.9297 34.0542C28.3568 33.4813 28.0703 32.7912 28.0703 31.9839C28.0703 31.1766 28.3568 30.4865 28.9297 29.9136C29.5026 29.3407 30.1927 29.0542 31 29.0542C31.8073 29.0542 32.4974 29.3407 33.0703 29.9136C33.6432 30.4865 33.9297 31.1766 33.9297 31.9839C33.9297 32.7912 33.6432 33.4813 33.0703 34.0542C32.4974 34.6271 31.8073 34.9136 31 34.9136ZM36.7422 27.2964C36.7161 27.5828 36.599 27.8302 36.3906 28.0386C36.2083 28.2469 35.974 28.3511 35.6875 28.3511C35.401 28.3511 35.1536 28.2469 34.9453 28.0386C34.737 27.8302 34.6328 27.5828 34.6328 27.2964C34.6328 27.0099 34.737 26.7625 34.9453 26.5542C35.1536 26.3459 35.401 26.2417 35.6875 26.2417C35.974 26.2417 36.2214 26.3459 36.4297 26.5542C36.638 26.7625 36.7422 27.0099 36.7422 27.2964ZM39.7109 28.3511C39.6589 27.5959 39.5417 26.9448 39.3594 26.3979C39.125 25.7469 38.7604 25.187 38.2656 24.7183C37.7969 24.2235 37.237 23.8589 36.5859 23.6245C36.0391 23.4422 35.388 23.3381 34.6328 23.312C33.9036 23.2599 32.6927 23.2339 31 23.2339C29.3073 23.2339 28.0833 23.2599 27.3281 23.312C26.599 23.3381 25.9609 23.4422 25.4141 23.6245C24.763 23.8589 24.1901 24.2235 23.6953 24.7183C23.2266 25.187 22.875 25.7469 22.6406 26.3979C22.4583 26.9448 22.3411 27.5959 22.2891 28.3511C22.263 29.0802 22.25 30.2912 22.25 31.9839C22.25 33.6766 22.263 34.9006 22.2891 35.6558C22.3411 36.3849 22.4583 37.0229 22.6406 37.5698C22.875 38.2209 23.2266 38.7938 23.6953 39.2886C24.1901 39.7573 24.763 40.0959 25.4141 40.3042C25.9609 40.5125 26.599 40.6297 27.3281 40.6558C28.0833 40.7078 29.3073 40.7339 31 40.7339C32.6927 40.7339 33.9036 40.7078 34.6328 40.6558C35.388 40.6297 36.0391 40.5256 36.5859 40.3433C37.237 40.1089 37.7969 39.7573 38.2656 39.2886C38.7604 38.7938 39.125 38.2209 39.3594 37.5698C39.5417 37.0229 39.6458 36.3849 39.6719 35.6558C39.724 34.9006 39.75 33.6766 39.75 31.9839C39.75 30.2912 39.737 29.0802 39.7109 28.3511ZM37.8359 37.1401C37.5234 37.9214 36.9635 38.4813 36.1562 38.8198C35.7396 38.9761 35.0365 39.0802 34.0469 39.1323C33.5 39.1584 32.6927 39.1714 31.625 39.1714H30.375C29.3333 39.1714 28.526 39.1584 27.9531 39.1323C26.9896 39.0802 26.2865 38.9761 25.8438 38.8198C25.0625 38.5073 24.5026 37.9474 24.1641 37.1401C24.0078 36.6974 23.9036 35.9943 23.8516 35.0308C23.8255 34.4578 23.8125 33.6506 23.8125 32.6089V31.3589C23.8125 30.3172 23.8255 29.5099 23.8516 28.937C23.9036 27.9474 24.0078 27.2443 24.1641 26.8276C24.4766 26.0203 25.0365 25.4604 25.8438 25.1479C26.2865 24.9917 26.9896 24.8875 27.9531 24.8354C28.526 24.8094 29.3333 24.7964 30.375 24.7964H31.625C32.6667 24.7964 33.474 24.8094 34.0469 24.8354C35.0365 24.8875 35.7396 24.9917 36.1562 25.1479C36.9635 25.4604 37.5234 26.0203 37.8359 26.8276C37.9922 27.2443 38.0964 27.9474 38.1484 28.937C38.1745 29.4839 38.1875 30.2912 38.1875 31.3589V32.6089C38.1875 33.6506 38.1745 34.4578 38.1484 35.0308C38.0964 35.9943 37.9922 36.6974 37.8359 37.1401Z" fill="white"/>
+                  </svg>
+              </a>
+    
+              <a href="https://www.instagram.com/realist__cafe/?hl=ru" target="_blanc">
+                <svg class="svgButton" width="62" height="62" viewBox="0 0 62 62" fill="#ffffff00" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="svgButton" cx="31" cy="31" r="30" stroke="white" stroke-opacity="0.2"/>
+                  <path class="svgButton svgButtonIns" d="M38.9297 27.9214C38.9557 28.0256 38.9688 28.1948 38.9688 28.4292C38.9688 30.3042 38.513 32.1141 37.6016 33.8589C36.6641 35.7078 35.349 37.1792 33.6562 38.2729C31.8073 39.4969 29.6849 40.1089 27.2891 40.1089C24.9974 40.1089 22.901 39.4969 21 38.2729C21.2865 38.299 21.612 38.312 21.9766 38.312C23.8776 38.312 25.5833 37.7261 27.0938 36.5542C26.1823 36.5542 25.375 36.2938 24.6719 35.7729C23.9948 35.2261 23.526 34.549 23.2656 33.7417C23.526 33.7677 23.7734 33.7808 24.0078 33.7808C24.3724 33.7808 24.737 33.7417 25.1016 33.6636C24.1641 33.4552 23.3828 32.9735 22.7578 32.2183C22.1328 31.4631 21.8203 30.6037 21.8203 29.6401V29.562C22.3932 29.9006 23.0052 30.0828 23.6562 30.1089C23.1094 29.7183 22.6667 29.2235 22.3281 28.6245C21.9896 28.0256 21.8203 27.3745 21.8203 26.6714C21.8203 25.9422 22.0156 25.2521 22.4062 24.6011C23.4219 25.8771 24.6589 26.8927 26.1172 27.6479C27.6016 28.4032 29.1771 28.8198 30.8438 28.8979C30.7917 28.5854 30.7656 28.2729 30.7656 27.9604C30.7656 27.2313 30.9479 26.5542 31.3125 25.9292C31.6771 25.2782 32.1719 24.7703 32.7969 24.4058C33.4219 24.0412 34.099 23.8589 34.8281 23.8589C35.4271 23.8589 35.974 23.9761 36.4688 24.2104C36.9896 24.4448 37.4453 24.7573 37.8359 25.1479C38.7734 24.9657 39.6458 24.6401 40.4531 24.1714C40.1406 25.1349 39.5417 25.8901 38.6562 26.437C39.4375 26.3328 40.2188 26.1115 41 25.7729C40.4271 26.6063 39.737 27.3224 38.9297 27.9214Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+    
+          <div class="footerAdapt">
+            <ul>
+              <h6>Информация</h6>
+              <li><a href="index.html"><h6>Главная</h6></a></li>
+              <li><a href="menu.html"><h6>Меню</h6></a></li>
+              <li><a href="#"><h6>Сертификаты</h6></a></li>
+              <li><a href="promoties.html"><h6>Акции</h6></a></li>
+              <li><a href="aboutUs.html"><h6>О нас</h6></a></li>
+              <li><a href="contacts.html"><h6>Контакты</h6></a></li>
+              <li><a href="#exampleModal" data-toggle="modal"><h6>Войти</h6></a></li>
+            </ul>
+          </div>
+          <div class="footerAdapt">
+            <ul>
+              <h6>Категории</h6>
+              <li><a href="#"><h6>Кофе</h6></a></li>
+              <li><a href="#"><h6>Чай</h6></a></li>
+              <li><a href="#"><h6>Коктейли</h6></a></li>
+              <li><a href="#"><h6>Десерты</h6></a></li>
+              <li><a href="#"><h6>Сеты</h6></a></li>
+              <li><a href="#"><h6>Кофе весовой</h6></a></li>
+              <li><a href="#"><h6>Чай весовой</h6></a></li>
+            </ul>
+          </div>
+    
+          <div>
+            <a href="tel:+375333111111"><h6><img src="img/svg/phone1.svg" alt="phone" width="15px" height="15px" />+375 33 311-11-11</h6></a>
+            <h6>Пн-пт с 9.00 до 23.00</h6>
+            <h6>Сб-вс с 10.00 до 00.00</h6>
+            <br>
+              <div class="leftAll">
+                <h6><img src="img/svg/placeholder1.svg" alt="map" width="15px" height="15px" /> г. Барановичи, ул. Ленина, д. 2</h6>
+                <h6><img src="img/svg/placeholder1.svg" alt="map" width="15px" height="15px" /> г. Могилев, ул. Ленинская, д. 205</h6>
+              </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    </div> <!--BackgrAll-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

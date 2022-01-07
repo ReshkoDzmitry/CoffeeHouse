@@ -1,0 +1,116 @@
+.menuBlock {
+    margin-bottom: 50px;
+}
+
+.cardMenu {
+    width: 352px;
+    height: 435px;
+    border: solid 1px #b4b4b4;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 0.5s all;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.colortitle {
+    color: white;
+    font-weight: 600;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.list-group-item-action {
+    width: 70%;
+}
+
+.list-group-item.active {
+    background-color: #b4b4b4;
+    border-color: #b4b4b4;
+}
+
+.cardMenu:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Параметры тени */
+    border-radius: 15px;
+}
+
+.cardHeading {
+    padding: 15px;
+    border-bottom: solid 1px #b4b4b4 ;
+    background-color: #b4b4b4;
+}
+
+.cardImg {
+    width: 350px;
+    height: 234px;
+    border: solid #b4b4b4 1px;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;    
+}
+
+.form-control {
+    width: 92%;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.shopingCart {
+    width: 20px;
+    height: 20px;
+}
+
+.btnModal1 {
+    width: 70px;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.contentMenu {
+    height: 105px;
+}
+
+.col-4 {
+    width: 300px;
+}
+
+.list-group {
+    width: 300px;
+    margin-right: 0px;
+}
+
+.col-4 {
+    flex: 0 0 28.333333%;
+    max-width: 18.333333%;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #fff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

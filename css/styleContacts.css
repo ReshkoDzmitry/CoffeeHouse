@@ -1,0 +1,33 @@
+.map {
+    width: 1200px;
+    height: 530px;
+    margin-top: 30px;
+}
+
+h6 {
+    color: white;
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+}
+
+.footerH6 {
+    color: white;
+}
+
+.colortitle {
+    color: white;
+    font-weight: 600;
+}
+
+.sendBarista {
+    background-image: url("../img/aboutUs/sendBarista.jpg");
+    height: 400px;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.marginZero {
+    margin-bottom: 0px;
+}
